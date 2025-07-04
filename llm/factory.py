@@ -1,7 +1,7 @@
 from typing import Any
 
 from llm.base import BaseLLM
-from llm.chatgpt.llm import ChatGPTLLM
+from llm.gpt.llm import ChatGPTLLM
 
 
 class LLMFactory:
