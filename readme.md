@@ -1,7 +1,7 @@
 # Confidence Scoring for Large Language Models (LLMs)
 
 ## Overview
-Based on the paper [Confidence Scoring for Large Language Models](https://arxiv.org/abs/2309.17066) by [Yin et al.](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+W.) (2023).
+Based on the paper [Confidence Scoring for Large Language Models](https://arxiv.org/pdf/2308.16175) by [Yin et al.](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+W.) (2023).
 
 ## Problem
 
@@ -99,12 +99,20 @@ Where f can be a:
 Simple average, or
 
 Weighted function (domain-specific)
+```
 
 
 ## This Repository
 
-This repository provides a Python3 implementation of the confidence scoring function based on Self-Reflection Certainty (SRC) as described in the paper.
+This repository provides a basic Python3 implementation of the confidence scoring function based on Self-Reflection Certainty (SRC) as described in the paper.
 
 
 
 ## Usage
+
+1. Create a virtual environment and install the required packages: pip install -r requirements.txt
+
+
+2. export OPENAI_API_KEY=<your key>
+
+3. Run the example script: python3 score.py
