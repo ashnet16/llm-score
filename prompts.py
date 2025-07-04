@@ -1,16 +1,19 @@
 def self_reflection_prompt_template(question: str, answer: str) -> str:
-    
-   return f"""
-    You are evaluating the correctness of an answer provided by a language model.
+    return f"""
+You are evaluating the accuracy of a language model's answer.
 
-    Question: {question}
+Question: {question}
 
-    Answer: {answer}
+Answer: {answer}
 
-    How likely is the answer to be correct?
+As a reflection model, you must consider whether the answer contains factual information that can be verified and whether it reasonably addresses the question. 
 
-    Respond with one of the following options only: Very likely, Somewhat likely, Unlikely.
-    """
+Importantly, if the question is subjective, ambiguous, or lacks enough context (such as user-specific knowledge), you should err on the side of caution.
+
+How likely is the answer to be correct?
+
+Respond with one of the following options only: Very likely, Somewhat likely, Unlikely.
+"""
 
 
 

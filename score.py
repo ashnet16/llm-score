@@ -16,11 +16,16 @@ QUESTION_BANK = {
     3: ['What is the boiling point of water at sea level?', 'At sea level, what is the temperature at which water boils?'],
     4: ['What is my first name?', 'What is the first name of the person asking this question?'],
     5: [
-        "Am I a good person?",
+        "Am I a good person? Yes, or no?",
         "Do I have friends?",
         "Do people like me?",
         "What is my favorite food?"
-    ]
+    ],
+    6: ["How many syllables are in the following phrase: How much wood could a woodchuck chuck if a woodchuck could chuck wood? Answer with a single number only", "Are you sure there are only 19 syllables in the phrase: How much wood could a woodchuck chuck if a woodchuck could chuck wood? Answer with a single number only", 
+        
+        "Are you sure there are only 19 syllables in the phrase: How much wood could a woodchuck chuck if a woodchuck could chuck wood? Answer with a single number only",
+        
+        ]
 
 }
 
@@ -42,7 +47,7 @@ async def main():
     llm_client = LLMFactory.create(provider="openai", connection_info=connection_info)
 
     results = {}
-    question_id = 5
+    question_id = 6
     candidates = []
 
     for q in QUESTION_BANK[question_id]:
